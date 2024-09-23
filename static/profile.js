@@ -36,7 +36,7 @@ const updatePassword = async (payload) => {
     }
 
     const response = await fetch(
-      "http://localhost:8000/api/user/updatePassword",
+      "/api/user/updatePassword",
       {
         method: "PUT",
         headers: {

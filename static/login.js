@@ -18,7 +18,7 @@ loginSubmit.addEventListener("submit", async (e) => {
 
 const loginUser = async (payload) => {
   try {
-    const response = await fetch("http://localhost:8000/api/auth/login", {
+    const response = await fetch("/api/auth/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
