@@ -1,0 +1,64 @@
+{% extends 'layout.html' %} 
+
+{% block title %} AuthApp: Login Page {% endblock
+title %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg p-4">
+                <h2 class="text-center mb-4">Login</h2>
+                <form id="loginSubmit">
+                    <div class="form-group mb-3">
+                        <label for="username" class="form-label"
+                            >Username</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="username"
+                            name="username"
+                            placeholder="Enter your Username"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="password" class="form-label"
+                            >Password</label
+                        >
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <small
+                            >Don't have an account?
+                            <a href="/api/auth/signup-page"
+                                >Signup here</a
+                            ></small
+                        >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', path='login.js') }}"></script>
+
+{% endblock content %}

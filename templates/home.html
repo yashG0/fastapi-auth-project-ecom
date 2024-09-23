@@ -1,0 +1,28 @@
+{% extends 'layout.html' %} 
+
+{% block title %} 
+AuthApp: Home Page
+{% endblock title %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="mb-4">Welcome to AuthApp</h1>
+    <p class="lead mb-5">Choose an option below to get started</p>
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+            <a
+                href="/api/auth/login-page"
+                class="btn btn-primary btn-lg btn-block"
+                >Login</a
+            >
+        </div>
+        <div class="col-md-4 mb-3">
+            <a
+                href="/api/auth/signup-page"
+                class="btn btn-outline-secondary btn-lg btn-block"
+                >Sign Up</a
+            >
+        </div>
+    </div>
+</div>
+{% endblock content %}
