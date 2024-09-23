@@ -1,8 +1,8 @@
-# 🚀 Your Project Name
+# 🚀 Auth-ecom-app
 
 ## 📖 Overview
 
-Welcome to **Your Project Name**, a modern web application built with FastAPI and React. This project allows users to [describe main functionality or purpose, e.g., "manage their tasks efficiently" or "interact with a dynamic blogging platform"].
+Welcome to **Auth-ecom-app**, a modern web application built with FastAPI and React. This project allows users to [describe main functionality or purpose, e.g., "manage their tasks efficiently" or "interact with a dynamic blogging platform"].
 
 ## 🌟 Features
 
